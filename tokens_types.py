@@ -6,27 +6,43 @@ wishes = [
     'want'
 ]
 
+articles = [
+    'a',
+    'an',
+    'the'
+]
+
+preposition = [
+    'to',
+    'in',
+]
+
 rooms = [
     'corridor',
     'hall',
     'bedroom',
-    'childrens-room',
+    'childrens',
+    'room',
     'kitchen',
     'bathroom',
-    'guest-room',
+    'guest',
+    'room',
     'pantry',
 ]
 
 subject_process = [
     'tv',
-    'home-theater',
+    'home' 
+    'theater',
     'conditioner',
-    'night-light',
+    'night',
+    'light',
     'humidifier',
     'netflix',
     'computer',
     'wifi',
-    'nanny-video',
+    'nanny',
+    'video',
     'coffee-machine',
     'plate',
     'fridge',
@@ -35,16 +51,18 @@ subject_process = [
 ]
 
 act = [
-    'turn-on',
-    'turn-off',
+    'turn',
+    'on',
+    'turn',
+    'off',
     'make'
 ]
 
 subject_additional_option = [
-    'tv-show',
+    'show',
     'movie',
     'degress',
-    'serial-name',
+    'serial',
     'latte',
     'degress'
 ]

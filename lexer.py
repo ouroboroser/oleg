@@ -5,7 +5,7 @@ class Lexer:
     def get_command(self, command):
         return command.split()
 
-    def find_room(self, divided_command, tokens):
+    def get_tokens(self, divided_command, tokens):
         for word in divided_command:
             if word in persons:
                 tokens.append(['PERSON: ', word])
