@@ -21,19 +21,16 @@ rooms = [
     'corridor',
     'hall',
     'bedroom',
-    'childrens',
-    'room',
+    'children-room',
     'kitchen',
     'bathroom',
-    'guest',
-    'room',
+    'guest-room',
     'pantry',
 ]
 
 subject_process = [
     'tv',
-    'home' 
-    'theater',
+    'home-theater',
     'conditioner',
     'night',
     'light',
@@ -41,8 +38,7 @@ subject_process = [
     'netflix',
     'computer',
     'wifi',
-    'nanny',
-    'video',
+    'nanny-video',
     'coffee-machine',
     'plate',
     'fridge',
@@ -63,6 +59,9 @@ subject_additional_option = [
     'movie',
     'degress',
     'serial',
+    'espresso',
+    'americano',
+    'cappuccino',
     'latte',
     'degress'
 ]

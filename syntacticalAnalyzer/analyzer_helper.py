@@ -7,7 +7,6 @@ def add(result, type, token, location):
     })
     return result
 
-
 locations = {
     'persons': 'root -> left',
     'wishes': 'root -> right',

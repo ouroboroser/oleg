@@ -21,6 +21,7 @@ class syntacticalAnalyzer:
             else:
                 error = 'syntax error. missing noun'
                 root.left = Node(error)
+                break
 
         for word in words:
             type = 'wishes'
@@ -100,5 +101,14 @@ class syntacticalAnalyzer:
         treeToString(root, string)
         print(''.join(string))
 
-        for row in result:
-            print(row)
+        syntax_error = False
+
+        string = ' '.join(string)
+        string = string.translate({ord(i): None for i in '()'})
+        string = string.split()
+
+        for item in string:
+            if item == 'syntax':
+                syntax_error = True
+
+        return syntax_error

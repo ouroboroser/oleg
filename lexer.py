@@ -8,18 +8,18 @@ class Lexer:
     def get_tokens(self, divided_command, tokens):
         for word in divided_command:
             if word in persons:
-                tokens.append(['PERSON: ', word])
+                tokens.append({'person': word})
             elif word in wishes:
-                tokens.append(['WISH: ', word])
+                tokens.append({'wish': word})
             elif word in rooms:
-                tokens.append(['ROOM TYPE: ', word])
+                tokens.append({'room type': word})
             elif word in subject_process:
-                tokens.append(['SUBJECT PROCESS: ', word])
+                tokens.append({'subject process': word})
             elif word in subject_additional_option:
-                tokens.append(['SUBJECT ADDITIONAL OPTION: ', word])
+                tokens.append({'subject additional option': word})
             elif word in act:
-                tokens.append(['ACT: ', word])
+                tokens.append({'action': word})
             elif word in '*-/+%=':
-                tokens.append(['OPERATOR: ', word])
+                tokens.append({'operator': word})
             elif re.match(".[0-9]", word):
-                tokens.append(['VALUE: ', word])
+                tokens.append({'value': word})
